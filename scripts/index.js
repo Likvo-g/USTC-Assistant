@@ -68,3 +68,4 @@ function appendMessage(text, type) {
     chatHistory.appendChild(messageDiv);
     chatHistory.scrollTop = chatHistory.scrollHeight; // 保持滚动条在最底部
 }
+

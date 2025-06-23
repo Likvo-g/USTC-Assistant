@@ -75,7 +75,13 @@ body {
 #sendButton:hover {
     background-color: #218838;
 }
-h1 {
-    color: #333;
-    margin-bottom: 20px;
+#title {
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+
 }
