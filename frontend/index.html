@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTC-Assistant</title>
+
+    <!--bootstrap5的css和js引入-->
+    <link rel="stylesheet" href="styles/Bootstrap5.css">
+    <script src="scripts/Bootstrap5.js"></script>
+
+    <!--主要js和css-->
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+
+
+</head>
+<body>
+    <h1 id="title">USTC-Assistant</h1>
+
+    <div class="container d-flex justify-content-center">
+
+        <div class="chat-history" id="chatHistory">
+            <div class="message llm-message">你好，这里是USTC-Assistant！</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="输入你的消息...">
+            <button id="sendButton">发送</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
