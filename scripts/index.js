@@ -22,8 +22,9 @@ async function sendMessage() {
   userInput.value = '';
   try {
     // 调用真实后端APIhttp:
-    const response = await fetch('http://110.42.45.71:8000/predict', {
+    const response = await fetch('http://110.42.45.71:8800/predict', {
       method: 'POST',
+      mode: 'cors',  
       headers: {
         'Content-Type': 'application/json',
       },
