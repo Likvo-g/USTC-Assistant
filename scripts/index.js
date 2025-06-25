@@ -21,8 +21,8 @@ async function sendMessage() {
   appendMessage(message, 'user-message');
   userInput.value = '';
   try {
-    // 调用真实后端API
-    const response = await fetch('http://localhost:8000/predict', {
+    // 调用真实后端APIhttp:
+    const response = await fetch('http://110.42.45.71:8000/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
