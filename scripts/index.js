@@ -1,4 +1,3 @@
-// 修正后的index.js
 import markdownit from 'https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/+esm'
 
 // 初始化Markdown渲染器
@@ -96,7 +95,7 @@ async function showRoute(startCoords, endCoords, travelMode = 'driving') {
 
         // 清除现有路线和标记
         clearMap();
-
+        
         // 如果起点或终点坐标为空，则仅显示一个点
         if (!startCoords || !endCoords) {
             const coords = startCoords || endCoords;
@@ -107,8 +106,8 @@ async function showRoute(startCoords, endCoords, travelMode = 'driving') {
         }
 
         // 高德地图坐标 - [经度,纬度]格式
-        const startLngLat = new AMap.LngLat(startCoords[1], startCoords[0]);
-        const endLngLat = new AMap.LngLat(endCoords[1], endCoords[0]);
+        const startLngLat = new AMap.LngLat(startCoords[0], startCoords[1]);
+        const endLngLat = new AMap.LngLat(endCoords[0], endCoords[1]);
 
         // 添加起点和终点标记
         const startMarker = new AMap.Marker({
@@ -229,7 +228,7 @@ async function showLocation(coords) {
         clearMap();
 
         // 高德地图坐标 - [经度,纬度]格式
-        const lngLat = new AMap.LngLat(coords[1], coords[0]);
+        const lngLat = new AMap.LngLat(coords[0], coords[1]);
 
         // 添加位置标记
         const marker = new AMap.Marker({
